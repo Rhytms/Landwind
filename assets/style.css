@@ -60,6 +60,11 @@ h1,h2,h3,h4,h5,h6{
 }
 .nav__link{
   color: var(--color-healines);
+  transition: 0.1s linear;
+}
+.nav__link:hover{
+  color: black;
+  font-weight: 700;
 }
 .cta{
 }
@@ -74,6 +79,10 @@ h1,h2,h3,h4,h5,h6{
   margin-left: 16px;
   cursor: pointer;
   line-height: 150%;
+  transition: .1s linear;
+}
+.nav__btn:hover{
+  background: #111928;
 }
 
 
@@ -105,7 +114,16 @@ h1,h2,h3,h4,h5,h6{
   padding: 12px 20px;
   cursor: pointer;
   line-height: 150%;
-}.btn__second {
+  transition: .1s linear;
+}
+.btn__first:hover{
+  background-color: #111928;
+}
+.btn__second:hover{
+  background-color: #111928;
+  color: white;
+}
+.btn__second {
   background-color: white;
   color: black;
   border: 1px solid #E5E7EB;
@@ -114,6 +132,7 @@ h1,h2,h3,h4,h5,h6{
   margin-left: 16px;
   cursor:pointer;
   line-height: 150%;
+  transition: .1s linear;
 }
 .hero__img{
   width: 532px;
@@ -239,6 +258,10 @@ h1,h2,h3,h4,h5,h6{
   position: relative;
   width: max-content;
   display:inline-block;
+  transition: 0.1s linear;
+}
+.proof__link:hover{
+  font-weight: 700;
 }
 .proof__link::after{
   content: "";
@@ -361,10 +384,26 @@ h1,h2,h3,h4,h5,h6{
   border: 1px solid #E5E7EB;
   box-shadow: 0px 4px 6px -1px rgba(0, 0, 0, 0.1), 0px 2px 4px -2px rgba(0, 0, 0, 0.05);
   border-radius: 8px;
+  transition: .1s linear;
 }
 .cards__item:nth-child(2){
   margin: 0 40px;
 }
+.cards__item:hover{
+  background:#111928;
+  color: white;
+}
+.cards__item:hover .cards__title, .cards__item:hover .price__month{
+  color: #ccc;
+} 
+.cards__item:hover .price__btn{
+  background-color: white;
+  color:#111928;
+  font-weight: 700;
+}
+ .cards__item:hover b, .cards__item:hover .price{
+  color:#7E3AF2;
+ }
 .cards__title{
   color: var(--color-healines);
   font-weight: 600;
@@ -554,6 +593,9 @@ h1,h2,h3,h4,h5,h6{
   background-color: var(--color-purple);
   color: white;
   cursor: pointer;
+  transition: .1s linear;
+}.cta__btn:hover{
+  background: #111928;
 }
 
 /* ============== Footer =============== */
